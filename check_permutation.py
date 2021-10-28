@@ -1,13 +1,13 @@
 def is_perm(s1,s2):
     s1 = s1.lower() #normalize data
-    s2 = s2.lower() #normalize data
+    s2 = s2.lower()
 
     if len(s1) != len(s2):
         return False
 
     d = dict()
 
-    for i in s1:##making dict of all lettes with frequency
+    for i in s1:#making dict of all lettes with frequency
         if i in d:
             d[i] -= 1
         else:
